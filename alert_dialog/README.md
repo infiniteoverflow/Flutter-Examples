@@ -33,4 +33,4 @@ AlertDialog alertD = AlertDialog(
 
 <hr>
 
-![](./screenshots/screen1.png) ![](./screenshots/screen)
+![](./screenshots/screen1.png) ![](./screenshots/screen2.png)
