@@ -8,8 +8,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Container App",
       home: Scaffold(
+        backgroundColor: Colors.red,
         appBar: AppBar(
           title: Text(
             "Container Appp"
