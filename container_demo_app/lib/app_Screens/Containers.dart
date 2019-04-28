@@ -10,6 +10,7 @@ class ContainerClass extends StatelessWidget {
       color: Colors.orange,
       width:200.0,
       height: 200.0,
+      margin: EdgeInsets.only(left: 20.0 , top: 30.0),
     );
   }
 

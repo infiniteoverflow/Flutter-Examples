@@ -17,10 +17,8 @@ class MyApp extends StatelessWidget {
             "Container Appp"
           ),
         ),
-        body: Center(
-          child: ContainerClass(),
+        body: ContainerClass()
         ),
-      )
     );
   }
 }
