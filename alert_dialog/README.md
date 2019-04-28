@@ -1,16 +1,36 @@
 # alert_dialog
 
-A new Flutter project.
+A new Flutter project which explains the use of buttons and alert dialogs in flutter.
 
-## Getting Started
+## Steps to use Buttons and Alert Dialogs
 
-This project is a starting point for a Flutter application.
+* Define the Button widget using the code:
 
-A few resources to get you started if this is your first Flutter project:
+```
+child: RaisedButton(
+            child: Text(
+              "Click me",
+              style: TextStyle(fontSize: 30.0),
+            ),
+            elevation: 10.0,
+            color: Colors.deepOrange,
+            onPressed: () =>alertDialog(context)
+          )
+```
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+* The method alertDialog() is called when the raised button is called.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+* The method consists of code to invoke an alert dialog when the button is clicked:
+
+```
+AlertDialog alertD = AlertDialog(
+      title: Text("Flight Booked Successfully"),
+      content: Text("Have a pleasant flight"),
+    );
+
+    showDialog(context: context, builder: (BuildContext context) => alertD);
+```
+
+<hr>
+
+![](./screenshots/screen1.png) ![](./screenshots/screen)
