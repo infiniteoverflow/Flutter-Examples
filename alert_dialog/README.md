@@ -23,12 +23,16 @@ child: RaisedButton(
 * The method consists of code to invoke an alert dialog when the button is clicked:
 
 ```
-AlertDialog alertD = AlertDialog(
+void alertDialog(BuildContext context) {
+
+    AlertDialog alertD = AlertDialog(
       title: Text("Flight Booked Successfully"),
       content: Text("Have a pleasant flight"),
     );
 
     showDialog(context: context, builder: (BuildContext context) => alertD);
+    
+  }
 ```
 
 <hr>
