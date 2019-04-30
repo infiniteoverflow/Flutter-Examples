@@ -54,4 +54,4 @@ class _MyApp extends State<MyApp> {
 
 <hr>
 
-![](./screenshots/screen1.png) ![](./screenshots/screen2.png)
+![](./screenshots/screen1.png) ![image](./screenshots/screen2.png)
