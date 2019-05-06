@@ -15,6 +15,11 @@ assets:
 
 * Then after this your image is usable in the app.
 
+```
+child: Image.asset('assets/puppy.jpeg')
+
+```
+
 * Follow the code in the class ImageAssets to implement an Image Widget in your app.
 
 <hr>
