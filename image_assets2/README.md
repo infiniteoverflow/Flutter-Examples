@@ -1,16 +1,22 @@
-# image_assets2
+# image_assets
 
-A new Flutter project.
+A new Flutter project which explains how to use images in Flutter.
 
-## Getting Started
+## Steps to use image assets
 
-This project is a starting point for a Flutter application.
+* Create a folder named assets and store all the images in that folder.
 
-A few resources to get you started if this is your first Flutter project:
+* Go to the pubspec.yaml file and make the following changes:
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+```
+assets:
+    - assets/puppy.jpeg
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+* Then after this your image is usable in the app.
+
+* Follow the code in the class ImageAssets to implement an Image Widget in your app.
+
+<hr>
+
+![](./assets/screen.png)
