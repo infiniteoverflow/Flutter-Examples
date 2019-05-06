@@ -1,16 +1,29 @@
-# dropdown_box
+# Dropdown_box
 
-A new Flutter project.
+A new Flutter project which explains how to use Dropdown box in flutter.
 
-## Getting Started
+## Steps to implement Drop down box
 
-This project is a starting point for a Flutter application.
+* Create a dropdown box using the DropDownButton widget
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+DropdownButton<String>(
+                items: _currencies.map((String dropDownStringItem) {
+                  return DropdownMenuItem<String>(
+                    value: dropDownStringItem,
+                    child: Text(dropDownStringItem),
+                  );
+                }).toList(),
+                onChanged: (String newValueSelected) {
+                  // Your code to execute, when a menu item is selected from drop down
+                  _onDropDownItemSelected(newValueSelected);
+                },
+                value: _currentItemSelected,
+              )
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+<hr>
+
+![](./screenshot/screen1.png) ![](./screenshot/screen2.png)
