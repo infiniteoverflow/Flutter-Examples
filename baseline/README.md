@@ -2,15 +2,25 @@
 
 A new Flutter application which explains Baseline Widget
 
-## Getting Started
+## How to use Baseline Widget
 
-This project is a starting point for a Flutter application.
+ - Use the following code to add the Widget '2' besides the Text Widget 'A'
+ 
+ ```
+ 
+    Baseline(
+            baseline: -12,
+            baselineType: TextBaseline.alphabetic,
+            child: Text(
+               "2",
+               style: TextStyle(
+                  fontSize: 20.0
+                   ),
+                ),
+            )
+ 
+ ```
 
-A few resources to get you started if this is your first Flutter project:
+### Screenshot
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+![](./screenshot/screen.png)
