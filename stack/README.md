@@ -2,15 +2,45 @@
 
 A new Flutter application which explains the use of Stack Widget.
 
-## Getting Started
+## How to use Stack Widget
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+ - Use the following code to include a Stack widget in the application
+ 
+ ```
+ 
+            Stack(
+                children: <Widget>[
+                  Text(
+                    "Hello world",
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontSize: 35.0
+                    ),
+                  ),
+    
+                  Text(
+                    "WOW",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20.0
+                    ),
+                  )
+    
+                ],
+              )         
+                
+ ```
+ 
+  - We can use the alignment parameter to arrange all the overlapping widgets relative to the biggest
+  widget.
+  
+  ```
+  
+    alignment: AlignmentDirectional.bottomStart
+  
+  ```
+  
+  
+  ### Screenshots
+  
+  ![](./screenshot/screen.png)
