@@ -2,15 +2,42 @@
 
 A new Flutter application which explains the use of Gesture Detectors in Flutter
 
-## Getting Started
+## How to setup gestures for Widgets
 
-This project is a starting point for a Flutter application.
+ - Wrap the widget under the GestureDetector Widget and then you can add different gesture listeners.
+ 
+ ```
+ 
+  GestureDetector(
 
-A few resources to get you started if this is your first Flutter project:
+          onTap: () {
+            print("Puppy Clicked");
+          },
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+          onDoubleTap: () {
+            print("Puppy double clicked");
+          },
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+          onLongPress: () {
+            print("Puppy Long pressed");
+          },
+
+          onVerticalDragStart: (DragStartDetails details) {
+            print("Puppy dragged vertically");
+            print(details);
+          },
+
+          onVerticalDragUpdate: (DragUpdateDetails details) {
+            print("Puppy Vertically updated");
+            print(details);
+          },
+
+          child: Center(
+            child: Image(
+              image: AssetImage("assets/images/puppy.jpeg")
+            ),
+          ),
+ )
+ 
+ ```
+ 
