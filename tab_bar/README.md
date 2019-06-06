@@ -2,15 +2,48 @@
 
 A new Flutter application which shows how to implement Tab bars in flutter apps
 
-## Getting Started
+## How to use Tab Bars in Flutter
 
-This project is a starting point for a Flutter application.
+- Use the code below to implement a tab bar with 3 options. In the MaterialApp Widget give the 
+following code:
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+home: DefaultTabController(
+          length: 3,
+          child: Scaffold(
+            appBar: AppBar(
+              title: Text(
+                "Tab bar Demo"
+              ),
+              bottom: TabBar(
+                  tabs: [
+                    Tab(
+                      icon: Icon(Icons.local_taxi),
+                    ),
+                    Tab(
+                      icon: Icon(Icons.train),
+                    ),
+                    Tab(
+                      icon: Icon(Icons.directions_bus),
+                    )
+                  ],
+              ),
+            ),
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+              body: TabBarView(
+                  children: [
+                    Icon(Icons.local_taxi),
+                    Icon(Icons.train),
+                    Icon(Icons.directions_bus),
+                  ]
+              )
+          )
+      )
+
+```
+
+
+### Screenshots
+
+![](./screenshots/screen1.png) ![](./screenshots/screen2.png)
