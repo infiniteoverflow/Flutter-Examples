@@ -2,15 +2,53 @@
 
 A new Flutter application which exhibits the use of Sliver App bars in Flutter
 
-## Getting Started
+## How to use Sliver App Bar 
 
-This project is a starting point for a Flutter application.
+- In the home part of MaterialApp give the following code to implement Sliver App bar
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+CustomScrollView(
+      slivers: <Widget>[
+        SliverAppBar(
+          pinned: true,
+          expandedHeight: 150.0,
+          flexibleSpace: FlexibleSpaceBar(
+            title: Text(
+              "Sliver App Bar"
+            ),
+          ),
+        ),
+        SliverFixedExtentList(
+            delegate: SliverChildBuilderDelegate(
+                (BuildContext context,int index) {
+                  return Container(
+                      alignment: Alignment.center,
+                      color: Colors.white,
+                      child: Text(
+                        "List Item $index",
+                        style: TextStyle(
+                          fontSize: 20.0
+                        ),
+                      )
+                  );
+                }
+            ),
+            itemExtent: 50.0
+        )
+      ],
+    )
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- To adjust the size of the app bar at the starting chnage the value in the following code:
+
+```
+
+ expandedHeight: 150.0
+
+```
+
+### Screenshots
+
+![](./screenshots/screen1.png) ![](./screenshots/screen2.png)
