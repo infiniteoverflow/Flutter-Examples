@@ -4,7 +4,7 @@ A new Flutter application which explains Baseline Widget
 
 ## How to use Baseline Widget
 
- - Use the following code to add the Widget '2' besides the Text Widget 'A'
+ - Use the following code to add the Widget '2' to give the impression of sqaure
  
  ```
  
