@@ -2,15 +2,28 @@
 
 A new Flutter application which implements Radio Widget
 
-## Getting Started
+## How to implement a Radio Groups
 
-This project is a starting point for a Flutter application.
+- Use the following code to add a Radio button
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    Radio(
+        value:1,
+        groupValue:1,
+        onChanged:(T) {
+            
+        },
+    )
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- The <b>value</b> represent the value of the RadioButton
+
+- The <b>groupValue</b> is used to group a bunch of radio buttons such that only one radio button
+amoungst the group can be selected at a time.
+
+
+### Screenshots
+
+![](./screenshots/screen1.png) ![](screenshots/screen2.png)
