@@ -2,15 +2,73 @@
 
 A new Flutter application which explains how to implement a PopupMenuButton in flutter.
 
-## Getting Started
+## How to implement PopupMenuButton in flutter
 
-This project is a starting point for a Flutter application.
+- Use the following code to implement PopupMenuButton
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+        PopupMenuButton<items>(
+          onSelected: (items result) {
+            setState(() {
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+            });
+          },
+
+          itemBuilder: (BuildContext context) => <PopupMenuEntry<items>> [
+            const PopupMenuItem<items>(
+              value: items.season1,
+              child: Text(
+                'Season 1'
+              ),
+            ),
+
+            const PopupMenuItem<items>(
+              value: items.season2,
+              child: Text(
+                  'Season 2'
+              ),
+            ),
+
+            const PopupMenuItem<items>(
+              value: items.season3,
+              child: Text(
+                  'Season 3'
+              ),
+            ),
+
+            const PopupMenuItem<items>(
+              value: items.season4,
+              child: Text(
+                  'Season 4'
+              ),
+            ),
+
+            const PopupMenuItem<items>(
+              value: items.season5,
+              child: Text(
+                  'Season 5'
+              ),
+            ),
+          ],
+          icon: Icon(Icons.tv),
+        )
+
+```
+
+- To add individual items we use the following code
+
+```
+
+            const PopupMenuItem<items>(
+              value: items.season5,
+              child: Text(
+                  'Season 5'
+              ),
+            ),
+
+```
+
+### Screenshots
+
+![](screenshots/screen1.png) ![](screenshots/screen2.png)
