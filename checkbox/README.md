@@ -2,15 +2,42 @@
 
 A new Flutter application which implements a checkbox
 
-## Getting Started
+## How to implement a Checkbox
 
-This project is a starting point for a Flutter application.
+- Use the following code to implement a Checkbox Widget
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+            Checkbox(
+                value: selectedValue,
+                onChanged: (bool value) {
+                  setState(() {
+                    selectedValue = value;
+                  });
+                },
+                activeColor: Colors.yellow,
+                checkColor: Colors.red,
+              ),
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- To set the color of the selected box , we use the activeColor attribute
+
+```
+
+    activeColor: Colors.yellow
+
+```
+
+- To set the color of the tick in the selected box, we use the checkColor attribute
+
+```
+
+    checkColor: Colors.red
+
+```
+
+
+### Screenshots
+
+![](./screenshots/screen1.png) ![](./screenshots/screen2.png)
