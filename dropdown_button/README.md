@@ -32,3 +32,7 @@ A new Flutter application which explains how to use DropdownButton in flutter.
     value: selectedItem
 
 ```
+
+### Screenshots
+
+![](./screenshot/screen1.png) ![](./screenshot/screen2.png) ![](./screenshot/screen3.png)
