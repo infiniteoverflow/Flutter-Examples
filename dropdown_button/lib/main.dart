@@ -50,13 +50,7 @@ class MyAppState extends State<MyApp> {
                           selected = value;
                         });
                       },
-                      items: <String>[
-                        "Season 1",
-                        "Season 2",
-                        "Season 3",
-                        "Season 4",
-                        "Season 5"
-                      ].map<DropdownMenuItem<String>>((String value) {
+                      items: items.map<DropdownMenuItem<String>>((String value) {
                         return DropdownMenuItem<String>(
                           value: value,
                           child: Text(value),

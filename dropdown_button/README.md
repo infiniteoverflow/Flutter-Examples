@@ -2,15 +2,33 @@
 
 A new Flutter application which explains how to use DropdownButton in flutter.
 
-## Getting Started
+## How to use a Dropdown widget in flutter
 
-This project is a starting point for a Flutter application.
+- Use the following code to implement a dropdown button with the items specified in items array.
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    DropdownButton<String>(
+                          value: selected,
+                          onChanged: (String value) {
+                            setState(() {
+                              selected = value;
+                            });
+                          },
+                          items: items.map<DropdownMenuItem<String>>((String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(value),
+                            );
+                          }).toList()
+                      ),
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- The value attribute sets the value of the selected item to show up on the Dropdown button
+
+```
+
+    value: selectedItem
+
+```
