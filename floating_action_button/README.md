@@ -18,6 +18,19 @@ floatingActionButton: FloatingActionButton(
 
 ```
 
-<hr>
+- We can also implement FAB as a child to a parent Widget as follows:
+
+```
+
+child: FloatingActionButton(
+    onPressed: () {
+       
+    },
+    child: Icon(Icons.add),
+)
+
+```
+
+### Screenshot
 
 ![](./screenshot/screen.png)
