@@ -2,15 +2,45 @@
 
 A new Flutter application that implements Slider Widget
 
-## Getting Started
+## How to implement Slider Widget in Flutter
 
-This project is a starting point for a Flutter application.
+- Use the following code to implement Slider
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+               Slider(
+                  value: sliderValue,
+                  onChanged: (double value) {
+                    setState(() {
+                      sliderValue = value;
+                    });
+                  },
+                  min: 0,
+                  max: 100,
+                  divisions: 10,
+                  activeColor: Colors.red,
+              ),
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- The minimum and maximum value of the slider is set by the min and max attribute
+
+```
+
+    min:0
+    max:100
+
+```
+
+- The no. of divisions is set by the divisions attribute
+
+```
+
+    divisions:100
+
+```
+
+
+### Screenshot
+
+![](screenshot/screen.png)
