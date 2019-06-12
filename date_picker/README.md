@@ -2,15 +2,57 @@
 
 A new Flutter application that implements DatePicker Widget
 
-## Getting Started
+## Steps to implement DatePicker Widget
 
-This project is a starting point for a Flutter application.
+- Declare a variable <b>_date</b> that stores the current Date and Time
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    DateTime _date = DateTime.now();
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- Declare a method which shows up the calender to select the required Date
+
+```
+
+    Future<Null> selectDate (BuildContext context) async {
+    
+        final DateTime picked = await showDatePicker(
+            context: context,
+            initialDate: _date,
+            firstDate: DateTime(1970),
+            lastDate: DateTime(2021)
+        );
+    
+        if(picked!=null && picked!=_date) {
+          setState(() {
+            _date = picked;
+          });
+        }
+    
+    }
+
+```
+
+- Call the above method in the onPressed field of the RaisedButton Widget
+
+```
+
+              RaisedButton(
+                  onPressed: () {
+                    selectDate(context);
+                  },
+                child: Text(
+                  "Choose Date !!"
+                ),
+                color: Colors.red,
+                textColor: Colors.white,
+              ),
+
+```
+
+
+### Screenshot
+
+![](screenshots/screen1.png) ![](screenshots/screen2.png)
