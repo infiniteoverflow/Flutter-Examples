@@ -4,7 +4,7 @@ A new Flutter application which implements a time picker Widget
 
 ## How to implement Time Picker Widget
 
-- Declare the required varibles to store the current time and the selected time
+- Declare the required variables to store the current time and the selected time
 
 ```
 
@@ -13,7 +13,7 @@ A new Flutter application which implements a time picker Widget
 
 ```
 
-- Declare method to call the Time Picker Widget
+- Declare method to call the TimePicker Widget
 
 ```
 
