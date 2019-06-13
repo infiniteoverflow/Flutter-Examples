@@ -2,15 +2,66 @@
 
 A new Flutter application which implements a SimpleDialog Widget
 
-## Getting Started
+## How to implement SimpleDialog
 
-This project is a starting point for a Flutter application.
+- Define a method which calls the SimpleDialog Widget with two options
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+  Future<void> openDialog() async {
+    switch(await showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return SimpleDialog(
+          title: const Text(
+            "Choose a Movie"
+          ),
+          children: <Widget>[
+            SimpleDialogOption(
+              onPressed: () {
+                Navigator.pop(context,Movies.Marvel);
+              },
+              child: Text("Marvel"),
+            ),
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+            SimpleDialogOption(
+              onPressed: () {
+                Navigator.pop(context,Movies.DC);
+              },
+              child: Text("DC"),
+            )
+          ],
+        );
+      }
+    )) {
+      case Movies.Marvel: setState(() {
+        selectedMovie = "Marvel";
+      });
+      break;
+
+      case Movies.DC: setState(() {
+        selectedMovie = "DC";
+      });
+      break;
+    }
+  }
+
+```
+
+- Call this method from any Widget
+
+```
+
+              IconButton(
+                icon: Icon(Icons.movie),
+                onPressed: () {
+                  openDialog();
+                },
+              ),
+
+```
+
+
+### Screenshots
+
+![](screenshots/screen1.png) ![](screenshots/screen2.png) ![](screenshots/screen3.png)
