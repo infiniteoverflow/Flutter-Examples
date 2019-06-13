@@ -19,25 +19,51 @@ class MyApp extends StatelessWidget {
             child: Container(
           width: 300.0,
           height: 100.0,
-          child: RaisedButton(
-            child: Text(
-              "Click me",
-              style: TextStyle(fontSize: 30.0),
-            ),
-            elevation: 10.0,
-            color: Colors.deepOrange,
-            onPressed: () =>alertDialog(context)
-          ),
+          child: IconButton(
+              icon: Icon(Icons.phone_android),
+              onPressed: () {
+                alertDialog(context);
+              }
+          )
         )),
       );
   }
 
   void alertDialog(BuildContext context) {
-    AlertDialog alertD = AlertDialog(
-      title: Text("Flight Booked Successfully"),
-      content: Text("Have a pleasant flight"),
+
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(
+            "Phone Error !!"
+          ),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text(
+                  "Your Phone has become hot"
+                ),
+                Text(
+                  "Put it in water :D"
+                )
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            FlatButton(
+              child: Text(
+                "I Understand"
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            )
+          ],
+        );
+      }
     );
 
-    showDialog(context: context, builder: (BuildContext context) => alertD);
   }
 }
