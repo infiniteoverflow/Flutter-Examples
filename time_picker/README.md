@@ -2,15 +2,50 @@
 
 A new Flutter application which implements a time picker Widget
 
-## Getting Started
+## How to implement Time Picker Widget
 
-This project is a starting point for a Flutter application.
+- Declare the required varibles to store the current time and the selected time
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    TimeOfDay _time = TimeOfDay.now();
+    TimeOfDay picked;
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- Declare method to call the Time Picker Widget
+
+```
+
+  Future<Null> selectTime(BuildContext context) async {
+    picked = await showTimePicker(
+        context: context,
+        initialTime: _time,
+    );
+
+    if(picked != null && picked != _time) {
+      setState(() {
+        _time = picked;
+      });
+    }
+  }
+
+```
+
+- Call the above method in any Widget
+
+```
+
+        IconButton(
+          icon: Icon(Icons.alarm),
+          onPressed: () {
+            selectTime(context);
+          },
+        )
+
+```
+
+
+### Screenshot
+
+![](screenshots/screen1.png) ![](screenshots/screen2.png) ![](screenshots/screen3.png)
