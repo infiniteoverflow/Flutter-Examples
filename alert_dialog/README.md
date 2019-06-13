@@ -2,39 +2,52 @@
 
 A new Flutter project which explains the use of buttons and alert dialogs in flutter.
 
-## Steps to use Buttons and Alert Dialogs
+## Steps to use Alert Dialogs
 
-* Define the Button widget using the code:
+* The method consists of code to invoke an alert dialog when the IconButton is clicked:
 
 ```
-child: RaisedButton(
-            child: Text(
-              "Click me",
-              style: TextStyle(fontSize: 30.0),
+
+  void alertDialog(BuildContext context) {
+
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(
+            "Phone Error !!"
+          ),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text(
+                  "Your Phone has become hot"
+                ),
+                Text(
+                  "Put it in water :D"
+                )
+              ],
             ),
-            elevation: 10.0,
-            color: Colors.deepOrange,
-            onPressed: () =>alertDialog(context)
-          )
-```
-
-* The method alertDialog() is called when the raised button is called.
-
-* The method consists of code to invoke an alert dialog when the button is clicked:
-
-```
-void alertDialog(BuildContext context) {
-
-    AlertDialog alertD = AlertDialog(
-      title: Text("Flight Booked Successfully"),
-      content: Text("Have a pleasant flight"),
+          ),
+          actions: <Widget>[
+            FlatButton(
+              child: Text(
+                "I Understand"
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            )
+          ],
+        );
+      }
     );
 
-    showDialog(context: context, builder: (BuildContext context) => alertD);
-    
   }
+
 ```
 
 <hr>
 
-![](./screenshots/screen1.png) ![](./screenshots/screen2.png)
+![](./screenshots/screen.png)
