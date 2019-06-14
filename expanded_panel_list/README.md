@@ -2,15 +2,75 @@
 
 A new Flutter application which implements ExpandedPanelList and ExpandedPanel.
 
-## Getting Started
+## How to implement ExpansionPanel and ExpansionPanelList
 
-This project is a starting point for a Flutter application.
+- First define a class MyItem to define the header,body and isExpanded variables
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    class MyItem {
+      bool isExpanded;
+      final String header;
+      final String body;
+    
+      MyItem({this.isExpanded : false,this.header,this.body});
+    
+    }
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- Then in the State class define a List of MyItem objects
+
+```
+
+    List<MyItem> _items = <MyItem>[
+        MyItem(header: "Header 1",body: "Body 1"),
+        MyItem(header: "Header 2",body: "Body 2"),
+        MyItem(header: "Header 3",body: "Body 3"),
+      ];
+ 
+```
+
+- The header attribute represents the header of the ExpansionPanel and body attribute represents
+the body of the ExpansionPanel
+
+- Then to make the ExpansionPanel Lists use the following code
+
+```
+
+    ListView(
+      children: <Widget>[
+        ExpansionPanelList(
+          expansionCallback: (int index,bool isExpanded) {
+            setState(() {
+              _items[index].isExpanded = !_items[index].isExpanded;
+            });
+          },
+          children: _items.map(
+              (MyItem myItem) {
+                return ExpansionPanel(
+                  headerBuilder: (BuildContext context,bool isExpanded) {
+                    return Text(
+                      myItem.header
+                    );
+                  },
+                  isExpanded: myItem.isExpanded,
+                  body: Container(
+                    child: Text(
+                      myItem.body
+                    ),
+                  ),
+                  canTapOnHeader: true
+                );
+              }
+          ).toList(),
+        )
+      ],
+    )
+
+```
+
+
+### Screenshots
+
+![](screenshots/screen1.png) ![](screenshots/screen2.png) ![](screenshots/screen3.png)
