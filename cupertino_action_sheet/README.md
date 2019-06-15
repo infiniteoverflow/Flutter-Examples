@@ -2,15 +2,57 @@
 
 A new Flutter application which implements a CupertinoActionSheet Widget
 
-## Getting Started
+## How to add a Cupertino ActionSheet in flutter
 
-This project is a starting point for a Flutter application.
+- USe the following code in the onPressed of any widget (here RaisedButton) to open the 
+CupertinoActionSheet
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+                final ack = CupertinoActionSheet(
+                  title: Text(
+                    "Flavours !!",
+                    style: TextStyle(
+                      fontSize: 20.0
+                    ),
+                  ),
+                  message: Text(
+                    "Please choose a Flavour !!",
+                    style: TextStyle(
+                      fontSize: 18.0
+                    ),
+                  ),
+                  actions: <Widget>[
+                    CupertinoActionSheetAction(
+                      child: Text("Peri Peri"),
+                      onPressed: () {
+    
+                      },
+                    ),
+    
+                    CupertinoActionSheetAction(
+                      child: Text("Margaritha"),
+                      onPressed: () {
+    
+                      },
+                    )
+                  ],
+    
+                  cancelButton: CupertinoActionSheetAction(
+                      onPressed: () {
+    
+                      },
+                      child: Text("Cancel")
+                  ),
+                );
+    
+                showCupertinoModalPopup(
+                    context: context,
+                    builder: (BuildContext context) => ack
+                );
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+### Screenshots
+
+![](screenshots/screen1.png) ![](screenshots/screen2.png)
