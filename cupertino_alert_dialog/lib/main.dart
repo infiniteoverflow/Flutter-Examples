@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Cupertino AlertDialog Demo'),
     );
   }
 }
@@ -103,14 +104,37 @@ class _MyHomePageState extends State<MyHomePage> {
 
                       },
                       child: CupertinoButton(
+                          color: Colors.yellow,
                           child: Text(
-                            "Press to free up space"
+                            "Free up space",
+                            style: TextStyle(
+                              color: Colors.black
+                            ),
                           ),
                           onPressed: () {
-                            
+
                           }
-                      )
-                  )
+                          ),
+                  ),
+
+                  CupertinoActionSheetAction(
+                    onPressed: () {
+
+                    },
+                    child: CupertinoButton(
+
+                        color: Colors.amber,
+                        child: Text(
+                            "Exit",
+                            style: TextStyle(
+                              color: Colors.black
+                            ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        }
+                    ),
+                  ),
                 ],
               )
             );
