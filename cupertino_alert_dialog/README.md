@@ -2,15 +2,75 @@
 
 A new Flutter application which implements CupertinoAlertDialog
 
-## Getting Started
+## How to implement a CupertinoAlertDialog
 
-This project is a starting point for a Flutter application.
+- Use the code below to implement a CupertinoAlertDialog
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+            showDialog(
+              context: context,
+              builder: (BuildContext context) => CupertinoAlertDialog(
+                title: Text(
+                  "Alert !!",
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.red
+                  ),
+                ),
+                content: Text(
+                  "You have insufficient Storage. Clear some space on your phone",
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    color: Colors.green
+                  ),
+                ),
+                actions: <Widget>[
+                  CupertinoActionSheetAction(
+                      onPressed: () {
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+                      },
+                      child: CupertinoButton(
+                          color: Colors.yellow,
+                          child: Text(
+                            "Free up space",
+                            style: TextStyle(
+                              color: Colors.black
+                            ),
+                          ),
+                          onPressed: () {
+
+                          }
+                          ),
+                  ),
+
+                  CupertinoActionSheetAction(
+                    onPressed: () {
+
+                    },
+                    child: CupertinoButton(
+
+                        color: Colors.amber,
+                        child: Text(
+                            "Exit",
+                            style: TextStyle(
+                              color: Colors.black
+                            ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        }
+                    ),
+                  ),
+                ],
+              )
+            );
+
+```
+
+- Put this code inside the onPressed of a RaisedButton to call this AlertDialog when the button is 
+clicked.
+
+### Screenshots
+
+![](./screenshots/screen1.png) ![](./screenshots/screen2.png)
