@@ -2,15 +2,54 @@
 
 A new Flutter application which implements a CupertinoPageScaffold.
 
-## Getting Started
+## How to implement a CupertinoPageScaffold
 
-This project is a starting point for a Flutter application.
+- Use the below code to implement a CupertinoPageScaffold
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        leading: Text(
+          "Cupertino Scaffold",
+          style: TextStyle(
+            color: Colors.white
+          ),
+        ),
+        backgroundColor: Colors.red,
+        trailing: Icon(Icons.menu),
+      ),
+      child: SafeArea(
+        child: Center(
+          child: Text(
+            "Hello World !!",
+            style: TextStyle(
+              fontSize: 25.0
+            ),
+          ),
+        ),
+      ),
+    )
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- SafeArea() is used to provide a body to the CupertinoScaffold
+
+```
+
+      SafeArea(
+        child: Center(
+          child: Text(
+            "Hello World !!",
+            style: TextStyle(
+              fontSize: 25.0
+            ),
+          ),
+        ),
+      ),
+
+```
+
+### Screenshot
+
+![](./screenshot/screen.png)
