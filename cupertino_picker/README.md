@@ -2,15 +2,51 @@
 
 A new Flutter application which implements CupertinoPicker
 
-## Getting Started
+## How to implement a CupertinoPicker
 
-This project is a starting point for a Flutter application.
+- Use the following code to implement a CupertinoPicker
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+          CupertinoPicker(
+            itemExtent: 50,
+            onSelectedItemChanged: (int index) {
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+            },
+            children: <Widget>[
+              Text(
+                "Text 1",
+                style: TextStyle(
+                  fontSize: 30.0,
+                  color: Colors.red
+                ),
+              ),
+              Text(
+                  "Text 2",
+                style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.red
+                ),
+              ),
+              Text(
+                "Text 3",
+                style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.red
+                ),
+              ),
+              Text(
+                  "Text 4",
+                style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.red
+                ),
+              ),
+            ],
+          )
+
+```
+
+### Screenshot
+
+![](./screenshot/screen.png)
