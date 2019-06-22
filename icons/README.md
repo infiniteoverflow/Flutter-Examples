@@ -2,15 +2,24 @@
 
 A new Flutter application which explains the implementation of Icons.
 
-## Getting Started
+## How to implement Icons
 
-This project is a starting point for a Flutter application.
+- Use the code below to implement an Icon 
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    Icon(Icons.map, color:Colors.red)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+- The icons can be declared as a variable using the following code
+
+```
+
+    Icon icon = Icon(Icons.train)
+
+```
+
+### Screenshot
+
+![](./screenshot/screen.png)
