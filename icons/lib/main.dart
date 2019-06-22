@@ -63,8 +63,104 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Text(
-          "Hello World",
+        child: Column(
+          children: <Widget>[
+            IconButton(
+              icon: Icon(
+                Icons.headset,
+                color: Colors.amber,
+                size: 65.0,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsetsDirectional.only(top:20.0),
+            ),
+
+            IconButton(
+              icon: Icon(
+                Icons.directions_bike,
+                color: Colors.red,
+                size: 65.0,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsetsDirectional.only(top:20.0),
+            ),
+
+            IconButton(
+              icon: Icon(
+                Icons.map,
+                color: Colors.green,
+                size: 65.0,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsetsDirectional.only(top:20.0),
+            ),
+
+            IconButton(
+              icon: Icon(
+                Icons.alarm,
+                color: Colors.black,
+                size: 65.0,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsetsDirectional.only(top:20.0),
+            ),
+
+            IconButton(
+              icon: Icon(
+                Icons.settings,
+                color: Colors.orangeAccent,
+                size: 65.0,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsetsDirectional.only(top:20.0),
+            ),
+
+            IconButton(
+              icon: Icon(
+                Icons.train,
+                color: Colors.blue,
+                size: 65.0,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsetsDirectional.only(top:20.0),
+            ),
+
+            IconButton(
+              icon: Icon(
+                Icons.phone_android,
+                color: Colors.brown,
+                size: 65.0,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsetsDirectional.only(top:20.0),
+            ),
+
+            IconButton(
+              icon: Icon(
+                Icons.laptop_chromebook,
+                color: Colors.black,
+                size: 65.0,
+              ),
+            ),
+
+            Container(
+              padding: EdgeInsetsDirectional.only(top:20.0),
+            ),
+          ],
         )
       ),
     );
