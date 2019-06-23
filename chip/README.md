@@ -2,15 +2,28 @@
 
 A new Flutter application which implements a chip
 
-## Getting Started
+## How to implement a Chip
 
-This project is a starting point for a Flutter application.
+- Use the following code to implement a Chip in flutter
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+            Chip(
+              label: Text(
+                "Delhi",
+                style: TextStyle(
+                    fontSize: 25.0
+                ),
+              ),
+              elevation: 10.0,
+              avatar: CircleAvatar(
+                child: Icon(Icons.location_city),
+              ),
+              shadowColor: Colors.amber,
+            )
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+
+### Screenshot
+
+![](./screenshot/screen.png)
