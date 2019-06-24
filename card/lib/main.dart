@@ -63,8 +63,46 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Text(
-          "Hello World"
+        child: Card(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              ListTile(
+                leading: Icon(Icons.account_circle,color: Colors.amber),
+                title: Text(
+                  "Aswin Gopinathan"
+                ),
+                subtitle: Text(
+                  "An Android Developer from Bangalore , India"
+                ),
+                trailing: Icon(Icons.delete,color: Colors.red,),
+              ),
+
+              ButtonTheme.bar(
+                child: ButtonBar(
+                  children: <Widget>[
+                    FlatButton(
+                      child: Text(
+                        "Contact",
+                        style: TextStyle(
+                          color: Colors.pink
+                        ),
+                      ),
+                    ),
+
+                    FlatButton(
+                      child: Text(
+                        "Email",
+                        style: TextStyle(
+                          color: Colors.pink
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
         )
       ),
     );
