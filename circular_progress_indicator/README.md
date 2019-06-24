@@ -22,4 +22,4 @@ values lying between them
 
 ### Screenshots
 
-![](./screenshot/screen2.png) ![](./screenshot/screen3.png) ![](./screenshot/screen1.png)
+![](./screenshots/screen2.png) ![](./screenshots/screen3.png) ![](./screenshots/screen1.png)
