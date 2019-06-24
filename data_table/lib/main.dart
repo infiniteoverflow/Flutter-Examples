@@ -73,8 +73,37 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Text(
-          "Hello World"
+        child: DataTable(
+            columns: <DataColumn>[
+              DataColumn(
+                label: Text("First Name"),
+                onSort: (i,b) {
+                  setState(() {
+                    names.sort((a,b)=>a.fname.compareTo(b.fname));
+                  });
+                }
+              ),
+
+              DataColumn(
+                  label: Text("Last Name"),
+                  onSort: (i,b) {
+                    setState(() {
+                      names.sort((a,b)=>a.lname.compareTo(b.lname));
+                    });
+                  }
+              )
+            ],
+            rows: names.map((name)=> DataRow(
+              cells: [
+                DataCell(
+                  Text(name.fname)
+                ),
+
+                DataCell(
+                  Text(name.lname)
+                )
+              ]
+            )).toList()
         )
       ),
     );
