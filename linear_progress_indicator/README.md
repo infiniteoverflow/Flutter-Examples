@@ -20,6 +20,6 @@ A new Flutter application which implements a LinearProgressIndicator
 values lying between them
 
 
-### Screeshots
+### Screenshots
 
 ![](./screenshot/screen1.png) ![](./screenshot/screen2.png) ![](./screenshot/screen3.png)
