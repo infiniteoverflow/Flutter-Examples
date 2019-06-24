@@ -2,15 +2,87 @@
 
 A new Flutter application which implements a Card
 
-## Getting Started
+## How to implement a Card of the type shown in the Screenshot
 
-This project is a starting point for a Flutter application.
+- Use the code below to implement a Card
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+        Card(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              ListTile(
+                leading: Icon(Icons.account_circle,color: Colors.amber),
+                title: Text(
+                  "Aswin Gopinathan"
+                ),
+                subtitle: Text(
+                  "An Android Developer from Bangalore , India"
+                ),
+                trailing: Icon(Icons.delete,color: Colors.red,),
+              ),
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+              ButtonTheme.bar(
+                child: ButtonBar(
+                  children: <Widget>[
+                    FlatButton(
+                      child: Text(
+                        "Contact",
+                        style: TextStyle(
+                          color: Colors.pink
+                        ),
+                      ),
+                    ),
+
+                    FlatButton(
+                      child: Text(
+                        "Email",
+                        style: TextStyle(
+                          color: Colors.pink
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+        )
+
+```
+
+- The bottom 2 buttons are implemented using the code below in the Card by providing the whole set 
+as a child to the Column Widget
+
+```
+
+              ButtonTheme.bar(
+                child: ButtonBar(
+                  children: <Widget>[
+                    FlatButton(
+                      child: Text(
+                        "Contact",
+                        style: TextStyle(
+                          color: Colors.pink
+                        ),
+                      ),
+                    ),
+
+                    FlatButton(
+                      child: Text(
+                        "Email",
+                        style: TextStyle(
+                          color: Colors.pink
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )
+
+```
+
+### Screenshot
+
+![](./screenshot/screen.png)
