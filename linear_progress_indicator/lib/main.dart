@@ -46,7 +46,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  double progress = 0.5;
+  double progress = 1;
   //String prog = progress.toString();
 
   @override
@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             Text(
-              "50%",
+              "100%",
               style: TextStyle(
                 fontSize: 25.0
               ),
