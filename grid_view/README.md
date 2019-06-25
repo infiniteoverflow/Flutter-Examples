@@ -2,15 +2,105 @@
 
 A new Flutter application which implements a GridView
 
-## Getting Started
+## How to implement a GridView
 
-This project is a starting point for a Flutter application.
+- Use the following code to implement a GridView with 2 columns
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+      GridView.count(
+        crossAxisCount: 2,
+        children: <Widget>[
+          Center(
+            child: RaisedButton(
+              child: Text("1"),
+              onPressed: () {
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+              },
+              color: Colors.amber,
+              elevation: 10.0,
+            )
+          ),
+          Center(
+              child: RaisedButton(
+                child: Text("2"),
+                onPressed: () {
+
+                },
+                color: Colors.red,
+                elevation: 10.0,
+              )
+          ),
+          Center(
+              child: RaisedButton(
+                child: Text("3"),
+                onPressed: () {
+
+                },
+                color: Colors.yellow,
+                elevation: 10.0,
+              )
+          ),
+          Center(
+              child: RaisedButton(
+                child: Text("4"),
+                onPressed: () {
+
+                },
+                color: Colors.blue,
+                elevation: 10.0,
+              )
+          ),
+          Center(
+              child: RaisedButton(
+                child: Text("5"),
+                onPressed: () {
+
+                },
+                color: Colors.green,
+                elevation: 10.0,
+              )
+          ),
+          Center(
+              child: RaisedButton(
+                child: Text("6"),
+                onPressed: () {
+
+                },
+                color: Colors.brown,
+                elevation: 10.0,
+              )
+          ),
+
+          Center(
+              child: RaisedButton(
+                child: Text("7"),
+                onPressed: () {
+
+                },
+                color: Colors.amber,
+                elevation: 10.0,
+              )
+          ),
+
+          Center(
+              child: RaisedButton(
+                child: Text("8"),
+                onPressed: () {
+
+                },
+                color: Colors.red,
+                elevation: 10.0,
+              )
+          ),
+
+        ],
+      )
+
+```
+
+- The attribute crossAxisCount specifies the no. of columns in the grid
+
+### Screenshot
+
+![](./screenshot/screen.png)
