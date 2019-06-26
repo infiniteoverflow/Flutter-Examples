@@ -6,7 +6,7 @@ A new Flutter project which explains the use of buttons and alert dialogs in flu
 
 * The method consists of code to invoke an alert dialog when the IconButton is clicked:
 
-```
+```dart
 
   void alertDialog(BuildContext context) {
 
