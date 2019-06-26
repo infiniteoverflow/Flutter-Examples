@@ -6,7 +6,7 @@ A new Flutter application which explains how to implement Bottom Navigation Bar 
 
  - Use the following code in Scaffold to setup a Bottom Naavigation Bar with 3 icons
  
- ```
+ ```dart
  
  bottomNavigationBar: BottomNavigationBar(
            items: <BottomNavigationBarItem>[
