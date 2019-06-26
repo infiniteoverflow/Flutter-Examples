@@ -6,7 +6,7 @@ A new Flutter application which explains Baseline Widget
 
  - Use the following code to add the Widget '2' to give the impression of sqaure
  
- ```
+ ```dart
  
     Baseline(
             baseline: -12,
