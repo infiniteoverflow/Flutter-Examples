@@ -6,7 +6,7 @@ A new Flutter application which implements BottomSheet Widget
 
 - Use the following method to implement a BottomSheet
 
-```
+```dart
 
   void openBottomSheet(context) {
     showModalBottomSheet(
@@ -41,7 +41,7 @@ A new Flutter application which implements BottomSheet Widget
 
  - Then call this method from the onPressed attribute of any Widget
  
- ```
+ ```dart
  
          IconButton(
              icon: Icon(Icons.menu),
