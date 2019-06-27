@@ -6,7 +6,7 @@ A new Flutter application which implements a CupertinoTabBar
 
 - Use the code below to implement a CupertinoTabBar
 
-```
+```dart
 
     CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
