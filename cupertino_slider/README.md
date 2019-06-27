@@ -6,7 +6,7 @@ A new Flutter application which implements a CupertinoSlider.
 
 - Use the following code to implement a CupertinoSlider
 
-```
+```dart
 
         CupertinoSlider(
             value: value,
