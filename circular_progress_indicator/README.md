@@ -6,7 +6,7 @@ A new Flutter application which implements a CircularProgressIndicator
 
 - Use the code below to implement a CircularProgressIndicator
 
-```
+```dart
 
               CircularProgressIndicator(
                 value: progress,
