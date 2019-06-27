@@ -6,7 +6,7 @@ A new Flutter application which implements a CupertinoPopupSurface
 
 - Use the following code to implement a CupertinoPopupSurface
 
-```
+```dart
 
             showDialog(
               context: context,
