@@ -6,7 +6,7 @@ A new Flutter application which implements CupertinoSegmentedControl
 
 - Use the code below to set up a CupertinoSegmentedControl Widget
 
-```
+```dart
 
         CupertinoSegmentedControl(
             children: <int,Widget> {
