@@ -6,7 +6,7 @@ A new Flutter application which implements a CupertinoPageScaffold.
 
 - Use the below code to implement a CupertinoPageScaffold
 
-```
+```dart
 
     CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
@@ -35,7 +35,7 @@ A new Flutter application which implements a CupertinoPageScaffold.
 
 - SafeArea() is used to provide a body to the CupertinoScaffold
 
-```
+```dart
 
       SafeArea(
         child: Center(
