@@ -6,7 +6,7 @@ A new Flutter application which implements CupertinoTabScaffold
 
 - Use the following code to implement a CupertinoTabScaffold
 
-```
+```dart
 
     CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
