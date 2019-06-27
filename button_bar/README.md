@@ -6,7 +6,7 @@ A new Flutter application which explains the use of ButtonBar Widget in Flutter.
 
 - Use the following code to implement ButtonBar
 
-```
+```dart
 
         ButtonBar(
           children: <Widget>[
@@ -52,7 +52,7 @@ A new Flutter application which explains the use of ButtonBar Widget in Flutter.
 
 - To evenly space the 3 buttons we use the following attribute of ButtonBar
 
-```
+```dart
 
     alignment: MainAxisAlignment.spaceEvenly
 
