@@ -6,7 +6,7 @@ A new Flutter application which implements CupertinoNavigationBar
 
 - Use the code below inside a CupertinoPageScaffold to implement a CupertinoNavigationBar
 
-```
+```dart
 
       navigationBar: CupertinoNavigationBar(
         leading: Icon(Icons.arrow_back_ios,color: Colors.white,),
