@@ -6,7 +6,7 @@ A new Flutter application which implements a Card
 
 - Use the code below to implement a Card
 
-```
+```dart
 
         Card(
           child: Column(
@@ -55,7 +55,7 @@ A new Flutter application which implements a Card
 - The bottom 2 buttons are implemented using the code below in the Card by providing the whole set 
 as a child to the Column Widget
 
-```
+```dart
 
               ButtonTheme.bar(
                 child: ButtonBar(
