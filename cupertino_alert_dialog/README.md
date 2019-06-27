@@ -6,7 +6,7 @@ A new Flutter application which implements CupertinoAlertDialog
 
 - Use the code below to implement a CupertinoAlertDialog
 
-```
+```dart
 
             showDialog(
               context: context,
