@@ -7,7 +7,7 @@ A new Flutter application which implements a CupertinoActionSheet Widget
 - USe the following code in the onPressed of any widget (here RaisedButton) to open the 
 CupertinoActionSheet
 
-```
+```dart
 
                 final ack = CupertinoActionSheet(
                   title: Text(
