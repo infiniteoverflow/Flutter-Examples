@@ -6,7 +6,7 @@ A new Flutter application which implements a checkbox
 
 - Use the following code to implement a Checkbox Widget
 
-```
+```dart
 
             Checkbox(
                 value: selectedValue,
@@ -23,7 +23,7 @@ A new Flutter application which implements a checkbox
 
 - To set the color of the selected box , we use the activeColor attribute
 
-```
+```dart
 
     activeColor: Colors.yellow
 
@@ -31,7 +31,7 @@ A new Flutter application which implements a checkbox
 
 - To set the color of the tick in the selected box, we use the checkColor attribute
 
-```
+```dart
 
     checkColor: Colors.red
 
