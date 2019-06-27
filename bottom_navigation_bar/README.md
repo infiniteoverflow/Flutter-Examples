@@ -50,7 +50,7 @@ A new Flutter application which explains how to implement Bottom Navigation Bar 
  
   - We use currentIndex parameter to set the icon which is selected
   
-  ```
+  ```dart
   
     currentIndex: selectedIcon
   
