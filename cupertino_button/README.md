@@ -6,7 +6,7 @@ A new Flutter application which implements a CupertinoButton.
 
 - Use the following code to implement a CupertinoButton
 
-```
+```dart
 
         CupertinoButton(
           child: Text(
