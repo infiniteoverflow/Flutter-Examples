@@ -6,7 +6,7 @@ A new Flutter application which implements a LinearProgressIndicator
 
 - Use the code below to implement a LinearProgressIndicator
 
-```
+```dart
 
               LinearProgressIndicator(
                 value: progress,

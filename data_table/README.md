@@ -6,7 +6,7 @@ A new Flutter application which implements a DataTable
 
 - Use the following code to implement a DataTable
 
-```
+```dart
 
         DataTable(
             columns: <DataColumn>[
@@ -45,7 +45,7 @@ A new Flutter application which implements a DataTable
 
 - Use the following code to setup the column headers
 
-```
+```dart
 
             columns: <DataColumn>[
               DataColumn(
@@ -71,7 +71,7 @@ A new Flutter application which implements a DataTable
 
 - To setup the rows with values use the following code
 
-```
+```dart
 
               rows: names.map((name)=> DataRow(
                 cells: [

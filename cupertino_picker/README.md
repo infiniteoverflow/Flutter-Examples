@@ -6,7 +6,7 @@ A new Flutter application which implements CupertinoPicker
 
 - Use the following code to implement a CupertinoPicker
 
-```
+```dart
 
           CupertinoPicker(
             itemExtent: 50,

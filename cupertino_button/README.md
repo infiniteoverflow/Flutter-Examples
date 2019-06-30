@@ -6,7 +6,7 @@ A new Flutter application which implements a CupertinoButton.
 
 - Use the following code to implement a CupertinoButton
 
-```
+```dart
 
         CupertinoButton(
           child: Text(
@@ -28,7 +28,7 @@ A new Flutter application which implements a CupertinoButton.
 
 - To set the border as circular border with a specified radius , we use
 
-```
+```dart
 
     borderRadius: BorderRadius.all(Radius.circular(30.0)),
 

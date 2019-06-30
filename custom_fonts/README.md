@@ -13,7 +13,7 @@ A new Flutter project to explain how custom fonts can be used in flutter apps.
 
 * Then go to pubspec.yml file and add the following line:
 
-```
+```dart 
 fonts:
     - family: ZCOOLKuaiLe
       fonts:

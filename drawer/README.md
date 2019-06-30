@@ -6,7 +6,7 @@ A new Flutter application which shows how Drawers work in flutter.
 
  - Use the following code inside Scaffold:
  
- ```
+ ```dart
  
  drawer: Drawer(
          child: ListView(

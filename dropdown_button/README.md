@@ -6,7 +6,7 @@ A new Flutter application which explains how to use DropdownButton in flutter.
 
 - Use the following code to implement a dropdown button with the items specified in items array.
 
-```
+```dart
 
     DropdownButton<String>(
                           value: selected,
@@ -27,7 +27,7 @@ A new Flutter application which explains how to use DropdownButton in flutter.
 
 - The value attribute sets the value of the selected item to show up on the Dropdown button
 
-```
+```dart
 
     value: selectedItem
 

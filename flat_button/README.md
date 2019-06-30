@@ -6,7 +6,7 @@ A new Flutter application which implements a Flat Button.
 
 - Use the following code to implement a Flat button Widget.
 
-```
+```dart
 
     FlatButton(
                 onPressed: () {
@@ -26,7 +26,7 @@ A new Flutter application which implements a Flat Button.
 
  - To set the color of the button use the color attribute
  
- ```
+ ```dart
  
  color: Colors.orange
  
@@ -34,7 +34,7 @@ A new Flutter application which implements a Flat Button.
  
  - To set the color on Click of the button , use the highlightColor attribute
  
- ```
+ ```dart
  
  highlightColor: Colors.red
  

@@ -6,7 +6,7 @@ A new Flutter application which implements a CupertinoActivityIndicator
 
 - Use the following code to implement a CupertinoActivityIndicator
 
-```
+```dart
 
         CupertinoActivityIndicator(
           animating: true,

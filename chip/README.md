@@ -6,7 +6,7 @@ A new Flutter application which implements a chip
 
 - Use the following code to implement a Chip in flutter
 
-```
+```dart
 
             Chip(
               label: Text(

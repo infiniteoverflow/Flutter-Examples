@@ -6,7 +6,7 @@ A new Flutter application which implements a GridView
 
 - Use the following code to implement a GridView with 2 columns
 
-```
+```dart
 
       GridView.count(
         crossAxisCount: 2,

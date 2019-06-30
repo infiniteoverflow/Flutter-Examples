@@ -38,7 +38,7 @@ A new Flutter application which explains how to implement Bottom Navigation Bar 
 
  - To add an item we use:
  
- ```
+ ```dart
  
     BottomNavigationBarItem(
                    icon: Icon(Icons.train),
@@ -50,7 +50,7 @@ A new Flutter application which explains how to implement Bottom Navigation Bar 
  
   - We use currentIndex parameter to set the icon which is selected
   
-  ```
+  ```dart
   
     currentIndex: selectedIcon
   

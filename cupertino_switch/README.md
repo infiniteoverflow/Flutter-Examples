@@ -6,7 +6,7 @@ A new Flutter application which implements a CupertinoSwitch.
 
 - Use the following code to implement a switch with initially false
 
-```
+```dart
 
     CupertinoSwitch(
         value: currentState,

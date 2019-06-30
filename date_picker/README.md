@@ -6,7 +6,7 @@ A new Flutter application that implements DatePicker Widget
 
 - Declare a variable <b>_date</b> that stores the current Date and Time
 
-```
+```dart
 
     DateTime _date = DateTime.now();
 
@@ -14,7 +14,7 @@ A new Flutter application that implements DatePicker Widget
 
 - Declare a method which shows up the calender to select the required Date
 
-```
+```dart
 
     Future<Null> selectDate (BuildContext context) async {
     
@@ -37,7 +37,7 @@ A new Flutter application that implements DatePicker Widget
 
 - Call the above method in the onPressed field of the RaisedButton Widget
 
-```
+```dart
 
               RaisedButton(
                   onPressed: () {

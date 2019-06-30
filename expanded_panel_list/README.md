@@ -6,7 +6,7 @@ A new Flutter application which implements ExpandedPanelList and ExpandedPanel.
 
 - First define a class MyItem to define the header,body and isExpanded variables
 
-```
+```dart
 
     class MyItem {
       bool isExpanded;
@@ -21,7 +21,7 @@ A new Flutter application which implements ExpandedPanelList and ExpandedPanel.
 
 - Then in the State class define a List of MyItem objects
 
-```
+```dart
 
     List<MyItem> _items = <MyItem>[
         MyItem(header: "Header 1",body: "Body 1"),
@@ -36,7 +36,7 @@ the body of the ExpansionPanel
 
 - Then to make the ExpansionPanel Lists use the following code
 
-```
+```dart
 
     ListView(
       children: <Widget>[
