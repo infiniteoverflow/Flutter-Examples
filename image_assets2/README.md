@@ -8,7 +8,7 @@ A new Flutter project which explains how to use images in Flutter.
 
 * Go to the pubspec.yaml file and make the following changes:
 
-```dart
+```dart 
 assets:
     - assets/puppy.jpeg
 ```
