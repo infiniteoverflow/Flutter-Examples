@@ -6,7 +6,7 @@ A new Flutter application which explains the use of Gesture Detectors in Flutter
 
  - Wrap the widget under the GestureDetector Widget and then you can add different gesture listeners.
  
- ```
+ ```dart
  
   GestureDetector(
 
