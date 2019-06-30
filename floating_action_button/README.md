@@ -6,7 +6,7 @@ A new Flutter project which shows how to use a Floating Action Button in a Flutt
 
 * In the Scaffold give:
 
-```
+```dart
 
 floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
@@ -20,7 +20,7 @@ floatingActionButton: FloatingActionButton(
 
 - We can also implement FAB as a child to a parent Widget as follows:
 
-```
+```dart
 
 child: FloatingActionButton(
     onPressed: () {
