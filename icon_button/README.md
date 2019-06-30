@@ -6,7 +6,7 @@ A new Flutter application which explains how to implement IconButton in Flutter
 
 - Use the following code to implement a IconButton Widget
 
-```
+```dart
 
               IconButton(
                   icon: Icon(Icons.ring_volume),
