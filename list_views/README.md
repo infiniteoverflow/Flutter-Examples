@@ -6,7 +6,7 @@ A new Flutter project which explains how to use List Views in flutter.
 
 * First of all we create a List of elements to inflate the List View :
 
-```
+```dart
 
 List<String> getListElements() {
     var items = List<String>.generate(1000,(counter)=>"Item $counter");
@@ -17,7 +17,7 @@ List<String> getListElements() {
 
 * Then we create a method which returns a ListView Widget:
 
-```
+```dart
 
 Widget getList(BuildContext context, List<String> items) {
 
@@ -40,7 +40,7 @@ Widget getList(BuildContext context, List<String> items) {
 
 * Then we call the getList() from the body attribute of Scaffold:
 
-```
+```dart
 
 body: getList(context, getListElements())
 
