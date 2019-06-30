@@ -2,15 +2,54 @@
 
 A new Flutter application which implements a Stepper
 
-## Getting Started
+## How to implement a Stepper
 
-This project is a starting point for a Flutter application.
+- First of all declare the items that have to be converted into a Step in a ListView
 
-A few resources to get you started if this is your first Flutter project:
+```dart
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    List<Step> steps = [
+        Step(
+          title: Text("Step 1"),
+          content: Text("Welcome to Step 1"),
+          subtitle: Text("Introduction")
+        ),
+    
+        Step(
+            title: Text("Step 2"),
+            content: Text("Welcome to Step 2"),
+        ),
+    ];
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+
+
+```
+
+ - Then pass this list to the  step attribute of Stepper Class
+ 
+ ```dart
+
+      Stepper(
+        steps: steps,
+        currentStep: _currentStep,
+        onStepContinue: () {
+          setState(() {
+            if(_currentStep < steps.length-1)
+              _currentStep++;
+          });
+        },
+        onStepCancel: () {
+          setState(() {
+            if(_currentStep >0)
+              _currentStep--;
+          });
+        },
+        onStepTapped: (int value) {
+          setState(() {
+            _currentStep = value;
+          });
+        },
+      )
+
+
+```
