@@ -25,7 +25,7 @@ A new Flutter application which implements a Stepper
 
 ```
 
- - Then pass this list to the  step attribute of Stepper Class
+ - Then pass this list to the steps attribute of Stepper Class
  
  ```dart
 
@@ -51,5 +51,46 @@ A new Flutter application which implements a Stepper
         },
       )
 
+```
+
+- The onStepContinue: is called when we click on the Continue button associated with each Step
+
+```dart
+
+        onStepContinue: () {
+          setState(() {
+            if(_currentStep < steps.length-1)
+              _currentStep++;
+          });
+        }
 
 ```
+
+- The onStepCancel: is called when we click on the Cancel button associated with each Step
+
+```dart
+
+        onStepCancel: () {
+          setState(() {
+            if(_currentStep >0)
+              _currentStep--;
+          });
+        }
+```
+
+- The onStepTapped: is called when we click on any random Step
+
+```dart
+
+        onStepTapped: (int value) {
+          setState(() {
+            _currentStep = value;
+          });
+        }
+
+```
+
+### Screenshots
+
+![](./screenshots/screen1.png) ![](./screenshots/screen2.png)
+
