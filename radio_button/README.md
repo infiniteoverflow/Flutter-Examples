@@ -6,7 +6,7 @@ A new Flutter application which implements Radio Widget
 
 - Use the following code to add a Radio button
 
-```
+```dart
 
     Radio(
         value:1,
