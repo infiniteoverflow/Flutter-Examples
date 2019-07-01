@@ -6,7 +6,7 @@ A new Flutter application which implements Raised Button.
 
 - Use the following code to implement a RaisedButton
 
-```
+```dart
 
     RaisedButton(
               onPressed: () {
@@ -23,7 +23,7 @@ A new Flutter application which implements Raised Button.
 
 - The elevation of the button can be set by changing the value in the elevation attribute
 
-```
+```dart
 
     elevation: 10.0
 
