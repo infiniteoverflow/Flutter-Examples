@@ -4,7 +4,7 @@ A new Flutter project to explain the working of Rows and Columns.
 
 * Rows can be defined as:
 
-```
+```dart
 Row(
     children: <Widget> [
         widget1,
@@ -16,7 +16,7 @@ Row(
 
 * Columns can be defined as:
 
-```
+```dart
 Column(
     children: <Widget> [
         widget1,
@@ -28,7 +28,7 @@ Column(
 
 * Expanded Widget can be used to equally divide the widgets within the space of the screen. It can be used as a child widget for Rows and Columns.
 
-```
+```dart
 Row(
     children: <Widget> [
         Expanded(
