@@ -6,7 +6,7 @@ A new Flutter application which exhibits the use of Sliver App bars in Flutter
 
 - In the home part of MaterialApp give the following code to implement Sliver App bar
 
-```
+```dart
 
 CustomScrollView(
       slivers: <Widget>[
@@ -43,7 +43,7 @@ CustomScrollView(
 
 - To adjust the size of the app bar at the starting chnage the value in the following code:
 
-```
+```dart
 
  expandedHeight: 150.0
 
