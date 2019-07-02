@@ -6,7 +6,7 @@ A new Flutter application which explains how to use a TextField in flutter
 
 - Use the code below to add a TextField widget
 
-```
+```dart
 
    TextField(
                decoration: InputDecoration(
@@ -22,7 +22,7 @@ A new Flutter application which explains how to use a TextField in flutter
 
 - To set the curved border of the TextField, we use
 
-```
+```dart
 
    border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0)
