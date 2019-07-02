@@ -6,7 +6,7 @@ A new Flutter project which explains how to use Stateful Widgets in Flutter.
 
 * Create a class that extends a "StatefulWidget" that returns a state in createState()
 
-``` 
+``` dart
 
 class MyApp extends StatefulWidget {
   @override
@@ -19,7 +19,7 @@ class MyApp extends StatefulWidget {
 
 * Create a "State" class which has widgets that may change.
 
-```
+```dart
 
 class _MyApp extends State<MyApp> {
   String name = " ";
