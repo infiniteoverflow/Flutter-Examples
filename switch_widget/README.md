@@ -6,7 +6,7 @@ A new Flutter application which implements a Switch Widget
 
 - Use the following code to implement a Switch Widget
 
-```
+```dart
 
                 Switch(
                   value: state,
