@@ -6,7 +6,7 @@ A new Flutter application which explains the use of Stack Widget.
 
  - Use the following code to include a Stack widget in the application
  
- ```
+ ```dart
  
             Stack(
                 children: <Widget>[
@@ -34,7 +34,7 @@ A new Flutter application which explains the use of Stack Widget.
   - We can use the alignment parameter to arrange all the overlapping widgets relative to the biggest
   widget.
   
-  ```
+  ```dart
   
     alignment: AlignmentDirectional.bottomStart
   
