@@ -6,7 +6,7 @@ A new Flutter application that implements Slider Widget
 
 - Use the following code to implement Slider
 
-```
+```dart
 
                Slider(
                   value: sliderValue,
@@ -25,7 +25,7 @@ A new Flutter application that implements Slider Widget
 
 - The minimum and maximum value of the slider is set by the min and max attribute
 
-```
+```dart
 
     min:0
     max:100
@@ -34,7 +34,7 @@ A new Flutter application that implements Slider Widget
 
 - The no. of divisions is set by the divisions attribute
 
-```
+```dart
 
     divisions:100
 

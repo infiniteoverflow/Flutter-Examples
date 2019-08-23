@@ -10,7 +10,7 @@ A new Flutter project which explains how to use SnackBars in flutter.
 
 * Normal Snackbars can be implemented as:
 
-```
+```dart
 
 void normalSnackBar(BuildContext context) {
     var snackBar = SnackBar(
@@ -26,7 +26,7 @@ void normalSnackBar(BuildContext context) {
 
   * SnackBars with an action can be implemented as:
 
-  ```
+  ```dart
 
   void actionSnackBar(BuildContext context) {
     var snackBar = SnackBar(

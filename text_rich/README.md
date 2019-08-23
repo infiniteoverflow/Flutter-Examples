@@ -6,7 +6,7 @@ A flutter project to explain the working of rich constructor of Text.
 
  - Use the following code to use the constructor
 
- ```
+ ```dart
     const Text.rich(
                   TextSpan(
                     text: 'Hello', // default text style

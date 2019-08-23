@@ -6,7 +6,7 @@ A new Flutter application which implements a Tooltip
 
 - Use the following code to wrap a Widget inside a Tooltip
 
-```
+```dart
 
         Tooltip(
           message: "This is a RaisedButton",

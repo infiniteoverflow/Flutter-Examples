@@ -6,7 +6,7 @@ A new Flutter application which implements a SimpleDialog Widget
 
 - Define a method which calls the SimpleDialog Widget with two options
 
-```
+```dart
 
   Future<void> openDialog() async {
     switch(await showDialog(
@@ -50,7 +50,7 @@ A new Flutter application which implements a SimpleDialog Widget
 
 - Call this method from any Widget
 
-```
+```dart
 
               IconButton(
                 icon: Icon(Icons.movie),

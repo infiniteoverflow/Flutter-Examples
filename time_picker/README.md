@@ -6,7 +6,7 @@ A new Flutter application which implements a time picker Widget
 
 - Declare the required variables to store the current time and the selected time
 
-```
+```dart
 
     TimeOfDay _time = TimeOfDay.now();
     TimeOfDay picked;
@@ -15,7 +15,7 @@ A new Flutter application which implements a time picker Widget
 
 - Declare method to call the TimePicker Widget
 
-```
+```dart
 
   Future<Null> selectTime(BuildContext context) async {
     picked = await showTimePicker(
@@ -34,7 +34,7 @@ A new Flutter application which implements a time picker Widget
 
 - Call the above method in any Widget
 
-```
+```dart
 
         IconButton(
           icon: Icon(Icons.alarm),

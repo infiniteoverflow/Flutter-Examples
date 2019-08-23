@@ -7,7 +7,7 @@ A new Flutter application which shows how to implement Tab bars in flutter apps
 - Use the code below to implement a tab bar with 3 options. In the MaterialApp Widget give the 
 following code:
 
-```
+```dart
 
 home: DefaultTabController(
           length: 3,

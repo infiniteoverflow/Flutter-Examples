@@ -6,7 +6,7 @@ A new Flutter application which explains how to implement a PopupMenuButton in f
 
 - Use the following code to implement PopupMenuButton
 
-```
+```dart
 
         PopupMenuButton<items>(
           onSelected: (items result) {
@@ -58,7 +58,7 @@ A new Flutter application which explains how to implement a PopupMenuButton in f
 
 - To add individual items we use the following code
 
-```
+```dart
 
             const PopupMenuItem<items>(
               value: items.season5,
