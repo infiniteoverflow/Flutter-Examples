@@ -1,16 +1,21 @@
 # convex_bottom_bar_example
 
-A new Flutter project.
+The official BottomAppBar can only display a notch FAB with app bar, sometimes we need a convex FAB. This ConvexAppBar is inspired by BottomAppBar and NotchShape's implementation.
 
-## Getting Started
+Online example can be found at https://appbar.codemagic.app.
 
-This project is a starting point for a Flutter application.
+convex_bottom_bar is now a Flutter Favorite package!
 
-A few resources to get you started if this is your first Flutter project:
+![alt](img/preview.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+How to use 
+Typically ConvexAppBar can work with Scaffold by setup its bottomNavigationBar.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The ConvexAppBar has to two constructors, the ConvexAppBar() will use default style to simplify the tab creation.
+
+Add this to your package's pubspec.yaml file:
+
+dependencies:
+  convex_bottom_bar:
+
+  ![alt](img/appbar-badge.gif)
