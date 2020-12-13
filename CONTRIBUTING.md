@@ -23,3 +23,5 @@ $ git push origin master
 ```
 
 * Then make a Pull request to the main repository from your forked repository
+
+* Kindly update the README.md file of the main repo with the name and link to the folder in the correct column. You can add the hyperlink as `[<name of widget>](<link to the repo>)`
